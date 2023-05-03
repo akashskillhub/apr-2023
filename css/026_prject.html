@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .hero {
+            height: 100vh;
+            background-image: url("./asset/images/bg.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left bottom;
+
+        }
+
+        .hero-image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100vh;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 20vh;
+            left: 15vw;
+            color: white;
+        }
+
+        .title {
+            font-size: 5rem;
+        }
+
+        p {
+            /* border: 2px solid red; */
+            width: 50%;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .cta {
+            text-decoration: none;
+            color: white;
+            border: 2px solid coral;
+            padding: 1rem 2rem;
+
+        }
+
+        .navbar {
+            background-color: coral;
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem 3rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            margin: 0px 2rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero"></div>
+    <div class="hero-content">
+        <h1 class="title">hi im john</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil magnam, voluptatum maxime atque recusandae
+            architecto hic repellat cupiditate, reprehenderit enim ullam ipsam dignissimos magni labore sunt ab dolores
+            tenetur consequatur.</p>
+        <a class="cta" href="">Contact me</a>
+    </div>
+    <img src="./asset/images/bg-dots.svg" class="hero-image" alt="">
+    <img src="./asset/images/user.png" class="hero-image" alt="">
+
+    <div class="navbar">
+        <h1>john</h1>
+        <div>
+            <a class="nav-link" href="">home</a>
+            <a class="nav-link" href="">about</a>
+            <a class="nav-link" href="">contact</a>
+        </div>
+    </div>
+
+    <div style="height: 5000px;"></div>
+</body>
+
+</html>
