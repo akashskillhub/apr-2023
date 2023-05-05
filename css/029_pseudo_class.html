@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box:hover {
+            background-color: red;
+        }
+
+        .p1 {
+            background-color: yellow;
+            padding: 1rem;
+            display: none;
+        }
+
+        .d1:hover+.p1 {
+            display: block;
+
+        }
+
+        .fancy::selection {
+            background-color: coral;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit exercitationem aut neque dignissimos, recusandae
+        tempora quo vero voluptates odit nobis obcaecati harum cum illum doloremque unde ut explicabo eius magnam.
+    </div>
+    <div class="d1">
+        hove me
+    </div>
+    <p class="p1">this is awsome para</p>
+
+    <div class="fancy">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatibus iste corrupti consequatur facere
+        quos expedita autem cumque, deleniti, recusandae praesentium, ab facilis odio quae molestiae porro suscipit
+        aliquam blanditiis?
+    </div>
+
+</body>
+
+</html>
