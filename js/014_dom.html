@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap By SKILLHUB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="inp">
+        <button onclick="test()" type="button" class="btn btn-primary">click me</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        let inp = document.getElementById("inp")
+        function test() {
+            let firstName = inp.value
+            console.log(`hi my name is ${firstName}`)
+            inp.value = ""
+        }
+    </script>
+</body>
+
+</html>

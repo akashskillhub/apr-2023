@@ -11,9 +11,23 @@
 <body>
 
     <script>
-        let x = 10
-        // value of x = 5 and square = 25 
-        console.log("value of x =", x, "and square = ", x * x)
+        let brands = [
+            {
+                name: "dell",
+                country: "usa",
+                sell: [
+                    { country: "usa", hq: "boston" },
+                    { country: "india", hq: "delhi" },
+                ]
+            },
+            {
+                name: "apple",
+                country: "usa"
+            },
+        ]
+        console.log(brands[0].sell[1].country)
+
+
     </script>
 </body>
 
