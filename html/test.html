@@ -9,19 +9,23 @@
 </head>
 
 <body>
-    <form>
+    <button onclick="fn()">click me</button>
+    <script>
 
-        <input type="text" placeholder="Enter First name">
-        <input type="text" placeholder="Enter Last name">
-        <br><br>
-        <h2>Select Gender</h2>
-        <input type="radio" id="male" name="gender"> <label for="male">male</label>
-        <input type="radio" id="female" name="gender"> <label for="female">female</label>
-        <input type="radio" id="other" name="gender"> <label for="other">other</label>
-        <br><br>
-        <input type="reset">
-        <input type="submit">
-    </form>
+        let chance = true
+
+        function fn() {
+            if (chance) {
+                console.log("hi")
+                chance = false
+            } else {
+                console.log("bye")
+                chance = true
+
+            }
+        }
+    </script>
+
 </body>
 
 </html>

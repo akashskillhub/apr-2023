@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap By SKILLHUB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .box {
+            height: 150px;
+            border: 2px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+                <div class="card">
+                    <div class="card-header">header</div>
+                    <div class="card-body">
+                        <div class="row g-0 text-center">
+                            <div class="col-4">
+                                <div onclick="game('b1')" id="b1" class="box"></div>
+                            </div>
+                            <div class="col-4">
+                                <div onclick="game('b2')" id="b2" class="box"></div>
+                            </div>
+                            <div class="col-4">
+                                <div onclick="game('b3')" id="b3" class="box"></div>
+                            </div>
+                            <div class="col-4">
+                                <div class="box" onclick="game('b4')" id="b4"></div>
+                            </div>
+                            <div class="col-4">
+                                <div class="box" onclick="game('b5')" id="b5"></div>
+                            </div>
+                            <div class="col-4">
+                                <div class="box" onclick="game('b6')" id="b6"></div>
+                            </div>
+                            <div class="col-4">
+                                <div class="box" onclick="game('b7')" id="b7"></div>
+                            </div>
+                            <div class="col-4">
+                                <div class="box" onclick="game('b8')" id="b8"></div>
+                            </div>
+                            <div class="col-4">
+                                <div class="box" onclick="game('b9')" id="b9"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function game(boxId) {
+            document.getElementById(boxId).classList.add("bg-danger")
+
+        }
+    </script>
+</body>
+
+</html>

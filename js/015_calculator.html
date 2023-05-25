@@ -22,6 +22,9 @@
                         <br>
                         <button class="btn btn-outline-primary" onclick="calculate('+')">+</button>
                         <button class="btn btn-outline-warning" onclick="calculate('-')">-</button>
+                        <button class="btn btn-outline-danger" onclick="calculate('/')">/</button>
+                        <button class="btn btn-outline-dark" onclick="calculate('*')">*</button>
+                        <button class="btn btn-danger" onclick="reset()">Delete</button>
                     </div>
                 </div>
             </div>
@@ -39,13 +42,22 @@
                 result = (+n1.value) + (+n2.value)
             } else if (op === "-") {
                 result = (+n1.value) - (+n2.value)
+            } else if (op === "*") {
+                result = (+n1.value) * (+n2.value)
+            } else if (op === "/") {
+                result = (+n1.value) / (+n2.value)
+            } else {
+                result = "Invalid Opration"
             }
 
             document.getElementById("root").innerHTML = `<div class="alert alert-success alert-dismissible">
-                addition = ${result}
+                 ${result}
                 <button class="btn-close" data-bs-dismiss="alert"></button>
                 </div>`
 
+        }
+        function reset() {
+            document.getElementById("root").innerHTML = ""
         }
     </script>
 </body>
